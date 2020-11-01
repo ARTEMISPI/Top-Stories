@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6304BD5B252F8E5A00B47B33 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6304BD5A252F8E5A00B47B33 /* Database.swift */; };
+		6339514C254F57F600C46D4B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6339514B254F57F600C46D4B /* Alamofire */; };
 		634A7B28252F36E800F28A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A7B27252F36E800F28A67 /* AppDelegate.swift */; };
 		634A7B2A252F36E800F28A67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A7B29252F36E800F28A67 /* SceneDelegate.swift */; };
 		634A7B2C252F36E800F28A67 /* topViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A7B2B252F36E800F28A67 /* topViewController.swift */; };
@@ -17,12 +18,9 @@
 		634A7B37252F36EE00F28A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634A7B35252F36EE00F28A67 /* LaunchScreen.storyboard */; };
 		63F1BAE12530A89700B7180D /* topStoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F1BAE02530A89700B7180D /* topStoriesCell.swift */; };
 		63F1BAE42534FEAD00B7180D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F1BAE32534FEAC00B7180D /* Network.swift */; };
-		D6945A26058B33D6F94691A3 /* Pods_Top_Stories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E125666A92BFA8A42C53746 /* Pods_Top_Stories.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E125666A92BFA8A42C53746 /* Pods_Top_Stories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Top_Stories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CF3C0017768B511F77FF34E /* Pods-Top Stories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top Stories.release.xcconfig"; path = "Target Support Files/Pods-Top Stories/Pods-Top Stories.release.xcconfig"; sourceTree = "<group>"; };
 		6304BD5A252F8E5A00B47B33 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		634A7B24252F36E800F28A67 /* Top Stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Stories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		634A7B27252F36E800F28A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +33,6 @@
 		634A7B38252F36EE00F28A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F1BAE02530A89700B7180D /* topStoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topStoriesCell.swift; sourceTree = "<group>"; };
 		63F1BAE32534FEAC00B7180D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		AC570E4BABB942942C2B6821 /* Pods-Top Stories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top Stories.debug.xcconfig"; path = "Target Support Files/Pods-Top Stories/Pods-Top Stories.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,22 +40,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6945A26058B33D6F94691A3 /* Pods_Top_Stories.framework in Frameworks */,
+				6339514C254F57F600C46D4B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27D8695F2D0DA8751C22F783 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AC570E4BABB942942C2B6821 /* Pods-Top Stories.debug.xcconfig */,
-				4CF3C0017768B511F77FF34E /* Pods-Top Stories.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		6304BD56252F687F00B47B33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +79,6 @@
 			children = (
 				634A7B26252F36E800F28A67 /* Top Stories */,
 				634A7B25252F36E800F28A67 /* Products */,
-				27D8695F2D0DA8751C22F783 /* Pods */,
-				ABE420D502732C5648E18283 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,14 +105,6 @@
 			path = "Top Stories";
 			sourceTree = "<group>";
 		};
-		ABE420D502732C5648E18283 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3E125666A92BFA8A42C53746 /* Pods_Top_Stories.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,17 +112,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 634A7B3B252F36EE00F28A67 /* Build configuration list for PBXNativeTarget "Top Stories" */;
 			buildPhases = (
-				E3335D2EC08BF5DEE814F33E /* [CP] Check Pods Manifest.lock */,
 				634A7B20252F36E800F28A67 /* Sources */,
 				634A7B21252F36E800F28A67 /* Frameworks */,
 				634A7B22252F36E800F28A67 /* Resources */,
-				99DA73FB2784EED30BEFC67F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Top Stories";
+			packageProductDependencies = (
+				6339514B254F57F600C46D4B /* Alamofire */,
+			);
 			productName = "Top Stories";
 			productReference = 634A7B24252F36E800F28A67 /* Top Stories.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +151,9 @@
 				Base,
 			);
 			mainGroup = 634A7B1B252F36E800F28A67;
+			packageReferences = (
+				6339514A254F57F600C46D4B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 634A7B25252F36E800F28A67 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,48 +175,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		99DA73FB2784EED30BEFC67F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Top Stories/Pods-Top Stories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Top Stories/Pods-Top Stories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Top Stories/Pods-Top Stories-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3335D2EC08BF5DEE814F33E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Top Stories-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		634A7B20252F36E800F28A67 /* Sources */ = {
@@ -391,7 +331,6 @@
 		};
 		634A7B3C252F36EE00F28A67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC570E4BABB942942C2B6821 /* Pods-Top Stories.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -412,7 +351,6 @@
 		};
 		634A7B3D252F36EE00F28A67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CF3C0017768B511F77FF34E /* Pods-Top Stories.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6339514A254F57F600C46D4B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6339514B254F57F600C46D4B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6339514A254F57F600C46D4B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		634A7B30252F36E800F28A67 /* Top_Stories.xcdatamodeld */ = {
